@@ -8,6 +8,7 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 5px;
   padding-bottom: 3px;
+  display: block;
   margin-bottom: var(--gap__medium);
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -63,17 +64,75 @@ section {
 }
 
 main {
-  width: 1189px;
-  height: 841px;
+  height: 1189px;
+  width: 841px;
   margin: 0 auto;
   padding: 50px;
   background-color: var(--color__background);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "basics basics basics" "attribute attribute attribute" "fertigkeiten inventar inventar" "fertigkeiten talente talente" "fertigkeiten nachteile nachteile" "fertigkeiten merkmale merkmale";
+  gap: 10px;
+}
+
+.basics {
+  grid-area: basics;
+  background-color: red;
+}
+
+.fertigkeiten {
+  grid-area: fertigkeiten;
+  background-color: red;
+}
+
+.inventar {
+  grid-area: inventar;
+  background-color: red;
+}
+
+.talente {
+  grid-area: talente;
+  background-color: red;
+}
+
+.nachteile {
+  grid-area: nachteile;
+  background-color: red;
+}
+
+.merkmale {
+  grid-area: merkmale;
+  background-color: red;
+}
+
+.attribute {
+  grid-area: attribute;
+}
+.attribute__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.attribut {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.attribut p {
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+.attribut div {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 80px;
+  background-color: white;
 }
 
 * {

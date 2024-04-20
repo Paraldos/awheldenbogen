@@ -4,6 +4,8 @@
 @import "./elemente/section.scss";
 @import "./elemente/main.scss";
 
+@import './attribute.scss';
+
 * {
     --color__text: rgb(0, 0, 0);
     --color__background: white;

@@ -1,15 +1,51 @@
 main {
-  width: 1189px;
-  height: 841px;
+  height: 1189px;
+  width: 841px;
   margin: 0 auto;
   padding: 50px;
   background-color: var(--color__background);
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'basics basics basics'
+    'attribute attribute attribute'
+    'fertigkeiten inventar inventar'
+    'fertigkeiten talente talente'
+    'fertigkeiten nachteile nachteile'
+    'fertigkeiten merkmale merkmale';
+  gap: 10px;
+}
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
+.basics {
+  grid-area: basics;
+  background-color: red;
+}
+
+
+
+.fertigkeiten {
+  grid-area: fertigkeiten;
+  background-color: red;
+}
+
+.inventar {
+  grid-area: inventar;
+  background-color: red;
+}
+
+.talente {
+  grid-area: talente;
+  background-color: red;
+}
+
+.nachteile {
+  grid-area: nachteile;
+  background-color: red;
+}
+
+.merkmale {
+  grid-area: merkmale;
+  background-color: red;
 }
