@@ -1,30 +1,13 @@
-let attribute = document.querySelector('.attribute')
+import Attribute from "./js/attribute.js"
+import Fertigkeiten from "./js/fertigkeiten.js"
+import Talente from "./js/talente.js"
+import Nachteile from "./js/nachteile.js"
+import Merkmale from "./js/merkmale.js"
+import Inventar from "./js/inventar.js"
 
-attribute.innerHTML = `
-    ${createHeader('Attribute', 'h1')}
-    <div class='attribute__content'>
-        ${createAttribute('Stärke')}
-        ${createAttribute('Geschick')}
-        ${createAttribute('Zähigkeit')}
-        ${createAttribute('Charisma')}
-        ${createAttribute('Klugheit')}
-        ${createAttribute('Weisheit')}
-    </div>
-`
-
-function createAttribute(title = '') {
-    return `
-    <div class='attribut'>
-        <p>${title}</p>
-        <div></div>
-    </div>`
-}
-
-function createHeader(title = '', type = 'h2') {
-    return `
-    <${type}>
-        <i class="fa-solid fa-diamond"></i>
-            ${title}
-        <i class="fa-solid fa-diamond"></i>
-    </${type}>`;
-}
+new Attribute()
+new Fertigkeiten()
+new Talente()
+new Nachteile()
+new Merkmale()
+new Inventar()

@@ -1,14 +1,19 @@
 @import "./elemente/headings.scss";
 @import "./elemente/label";
 @import "./elemente/input.scss";
-@import "./elemente/section.scss";
 @import "./elemente/main.scss";
 
 @import './attribute.scss';
+@import './fertigkeiten.scss';
+@import './talente.scss';
+@import './nachteile.scss';
+@import './merkmale.scss';
+@import './inventar.scss';
 
 * {
     --color__text: rgb(0, 0, 0);
     --color__background: white;
+    --color__grey: rgb(71, 71, 71);
     --size__value: 60px;
     --gap__small: 5px;
     --gap__medium: 15px;
@@ -42,3 +47,9 @@
     text-align: center;
   }
   
+  .value-box {
+    width: 50px;
+    height: 27px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }

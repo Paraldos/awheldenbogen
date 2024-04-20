@@ -1,0 +1,28 @@
+.merkmale {
+    grid-area: merkmale;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 3fr;
+        gap: 5px 15px;
+    }
+
+    &__element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       div {
+            height: 25px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+       }
+    }
+
+    &__dots {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+  }

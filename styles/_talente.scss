@@ -1,0 +1,14 @@
+.talente {
+    grid-area: talente;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        div {
+            min-height: 25px;
+            border-bottom: 1px solid black;
+        }
+    }
+}
