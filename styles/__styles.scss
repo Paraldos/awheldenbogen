@@ -1,8 +1,4 @@
-@import "./elemente/headings.scss";
-@import "./elemente/label";
-@import "./elemente/input.scss";
-@import "./elemente/main.scss";
-
+@import "./headings.scss";
 @import './attribute.scss';
 @import './fertigkeiten.scss';
 @import './talente.scss';
@@ -38,7 +34,32 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  main {
+    height: 1189px;
+    width: 841px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--color__background);
   
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'basics basics basics'
+      'attribute attribute attribute'
+      'fertigkeiten inventar inventar'
+      'fertigkeiten talente talente'
+      'fertigkeiten nachteile nachteile'
+      'fertigkeiten merkmale merkmale';
+    gap: 20px;
+  }
+  
+  .basics {
+    grid-area: basics;
+    background-color: red;
+  }
+
   .invisible {
     display: none;
   }

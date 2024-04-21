@@ -1,8 +1,11 @@
-export default class Attribute {
+import Nodetype from './nodetype.js';
+
+export default class Attribute extends Nodetype {
     constructor() {
+        super()
         this.Attribute = document.querySelector('.attribute')
         this.Attribute.innerHTML = `
-        ${createHeader('Attribute', 'h2')}
+        ${this.createHeader('Attribute', 'h2')}
         <div class='attribute__content'>
             ${this.createAttribute('Stärke')}
             ${this.createAttribute('Geschick')}
@@ -20,12 +23,4 @@ export default class Attribute {
             <div></div>
         </div>`
     }
-}
-function createHeader(title = '', type = 'h2') {
-    return `
-    <${type}>
-        <i class="fa-solid fa-diamond"></i>
-            ${title}
-        <i class="fa-solid fa-diamond"></i>
-    </${type}>`;
 }

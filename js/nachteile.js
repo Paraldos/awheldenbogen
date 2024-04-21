@@ -1,23 +1,14 @@
-export default class Nachteile {
+import Nodetype from "./nodetype.js";
+
+export default class Nachteile extends Nodetype {
     constructor() {
+        super()
         this.nachteile = document.querySelector('.nachteile')
         this.nachteile.innerHTML = `
-            ${createHeader('Nachteile')}
+            ${this.createHeader('Nachteile')}
             <div class='nachteile__container'>
-                <div></div>
-                <div></div>
-                <div></div>
                 <div></div>
             </div>
         `
     }
-}
-
-function createHeader(title = '', type = 'h2') {
-    return `
-    <${type}>
-        <i class="fa-solid fa-diamond"></i>
-            ${title}
-        <i class="fa-solid fa-diamond"></i>
-    </${type}>`;
 }

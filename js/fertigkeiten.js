@@ -1,5 +1,8 @@
-export default class Fertigkeiten {
+import Nodetype from "./nodetype.js"
+
+export default class Fertigkeiten extends Nodetype {
     constructor() {
+        super()
         this.Fertigkeiten = document.querySelector('.fertigkeiten')
         this.mentaleFertigkeiten = [
             'Bildung',
@@ -50,13 +53,4 @@ function createFertigkeit(title = '') {
             <p>${title}</p>
             <div></div>
         </div>`
-}
-
-function createHeader(title = '', type = 'h2') {
-    return `
-    <${type}>
-        <i class="fa-solid fa-diamond"></i>
-            ${title}
-        <i class="fa-solid fa-diamond"></i>
-    </${type}>`;
 }
