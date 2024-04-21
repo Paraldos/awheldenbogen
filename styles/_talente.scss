@@ -2,12 +2,12 @@
     grid-area: talente;
 
     &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap__small);
 
         div {
-            min-height: 25px;
+            min-height: var(--height__value);
             border-bottom: 1px solid black;
         }
     }

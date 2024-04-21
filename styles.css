@@ -144,12 +144,12 @@ main {
   grid-area: talente;
 }
 .talente__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap__small);
 }
 .talente__container div {
-  min-height: 25px;
+  min-height: var(--height__value);
   border-bottom: 1px solid black;
 }
 
@@ -242,7 +242,7 @@ main {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
   --color__grey: rgb(71, 71, 71);
-  --size__value: 60px;
+  --height__value: 25px;
   --gap__small: 5px;
   --gap__medium: 15px;
   --gap__big: 30px;
