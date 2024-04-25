@@ -1,31 +1,32 @@
 .attribute {
-    grid-area: attribute;
-    
-    &__content {
-      display: flex;
-      justify-content: space-between;
-    }
+  grid-area: attribute;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
   }
+}
 
 .attribut {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: var(--color__grey);
-    border-radius: 5px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--color__grey);
+  border-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
-    p {
-      text-align: center;
-      padding: 10px 0 5px 0;
-    }
-    
-    div {
-      width: 80px;
-      height: 80px;
-      border: 2px solid var(--color__grey);
-      border-radius: 80px;
-      background-color: white;
-    }
+  p {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 10px 0 5px 0;
+  }
+
+  div {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color__grey);
+    border-radius: 80px;
+    background-color: white;
+  }
 }
