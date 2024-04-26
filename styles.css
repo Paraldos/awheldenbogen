@@ -103,19 +103,6 @@ h3 {
   border-bottom: 1px solid black;
 }
 
-.nachteile {
-  grid-area: nachteile;
-}
-.nachteile__container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap__small);
-}
-.nachteile__container div {
-  height: var(--height__value);
-  border-bottom: 1px solid black;
-}
-
 .merkmale {
   grid-area: merkmale;
 }

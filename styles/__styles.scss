@@ -1,76 +1,75 @@
 @import "./headings.scss";
-@import './attribute.scss';
-@import './fertigkeiten.scss';
-@import './talente.scss';
-@import './nachteile.scss';
-@import './merkmale.scss';
-@import './inventar.scss';
+@import "./attribute.scss";
+@import "./fertigkeiten.scss";
+@import "./talente.scss";
+@import "./merkmale.scss";
+@import "./inventar.scss";
 
 * {
-    --color__text: rgb(0, 0, 0);
-    --color__background: white;
-    --color__grey: rgb(71, 71, 71);
-    --height__value: 25px;
-    --gap__small: 5px;
-    --gap__medium: 15px;
-    --gap__big: 30px;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    color: var(--color__text);
-    scroll-behavior: smooth;
-    background-color: grey;
-  
-    font-size: 15px;
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  --color__text: rgb(0, 0, 0);
+  --color__background: white;
+  --color__grey: rgb(71, 71, 71);
+  --height__value: 25px;
+  --gap__small: 5px;
+  --gap__medium: 15px;
+  --gap__big: 30px;
+}
 
-  main {
-    height: 1189px;
-    width: 841px;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: var(--color__background);
-  
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      'basics basics basics'
-      'attribute attribute attribute'
-      'fertigkeiten inventar inventar'
-      'fertigkeiten talente talente'
-      'fertigkeiten nachteile nachteile'
-      'fertigkeiten merkmale merkmale';
-    gap: 20px;
-  }
-  
-  .basics {
-    grid-area: basics;
-    background-color: red;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .invisible {
-    display: none;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .value-box {
-    width: 50px;
-    height: 27px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
+body {
+  color: var(--color__text);
+  scroll-behavior: smooth;
+  background-color: grey;
+
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  height: 1189px;
+  width: 841px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--color__background);
+
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "basics basics basics"
+    "attribute attribute attribute"
+    "fertigkeiten inventar inventar"
+    "fertigkeiten talente talente"
+    "fertigkeiten nachteile nachteile"
+    "fertigkeiten merkmale merkmale";
+  gap: 20px;
+}
+
+.basics {
+  grid-area: basics;
+  background-color: red;
+}
+
+.invisible {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.value-box {
+  width: 50px;
+  height: 27px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
