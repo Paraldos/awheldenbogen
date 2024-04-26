@@ -15,6 +15,8 @@ export default class Talente extends Nodetype {
                 <div></div>
                 <div></div>
                 <div></div>
+                <div></div>
+                <div></div>
             </div>
         `;
   }
