@@ -36,6 +36,26 @@ h3 {
   margin-bottom: 5px;
 }
 
+.basics {
+  grid-area: basics;
+}
+.basics__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 10px;
+}
+.basics__content div {
+  height: 35px;
+  border-bottom: 1px solid black;
+}
+.basics label {
+  font-size: 0.7rem;
+}
+.basics__description {
+  height: 35px;
+  border-bottom: 1px solid black;
+}
+
 .attribute {
   grid-area: attribute;
 }
@@ -214,11 +234,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "basics basics basics" "attribute attribute attribute" "fertigkeiten inventar inventar" "fertigkeiten talente talente" "fertigkeiten nachteile nachteile" "fertigkeiten merkmale merkmale";
   gap: 20px;
-}
-
-.basics {
-  grid-area: basics;
-  background-color: red;
 }
 
 .invisible {

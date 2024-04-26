@@ -1,4 +1,5 @@
 @import "./headings.scss";
+@import "./basics.scss";
 @import "./attribute.scss";
 @import "./fertigkeiten.scss";
 @import "./talente.scss";
@@ -52,11 +53,6 @@ main {
     "fertigkeiten nachteile nachteile"
     "fertigkeiten merkmale merkmale";
   gap: 20px;
-}
-
-.basics {
-  grid-area: basics;
-  background-color: red;
 }
 
 .invisible {

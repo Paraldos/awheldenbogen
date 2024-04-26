@@ -1,0 +1,23 @@
+.basics {
+  grid-area: basics;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 10px;
+
+    div {
+      height: 35px;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  &__description {
+    height: 35px;
+    border-bottom: 1px solid black;
+  }
+}
