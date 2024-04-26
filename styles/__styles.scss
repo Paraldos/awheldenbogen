@@ -29,7 +29,7 @@ body {
   scroll-behavior: smooth;
   background-color: grey;
 
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
@@ -39,7 +39,7 @@ main {
   height: 1189px;
   width: 841px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px 50px;
   background-color: var(--color__background);
 
   display: grid;
@@ -50,7 +50,6 @@ main {
     "attribute attribute attribute"
     "fertigkeiten inventar inventar"
     "fertigkeiten talente talente"
-    "fertigkeiten nachteile nachteile"
     "fertigkeiten merkmale merkmale";
   gap: 20px;
 }

@@ -1,25 +1,25 @@
 .fertigkeiten {
-    grid-area: fertigkeiten;
-    display: grid;
-    grid-template-columns: 1fr;
+  grid-area: fertigkeiten;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap__small);
-    }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap__small);
+  }
 }
 
 .fertigkeit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: var(--gap-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    div {
-        border: 1px solid var(--color__grey);
-        height: var(--height__value);
-        width: 50px;
-        border-radius: 5px;
-    }
+  div {
+    border: 1px solid var(--color__grey);
+    height: var(--height__value);
+    width: 50px;
+    border-radius: 5px;
+  }
 }
