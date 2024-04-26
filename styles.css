@@ -173,7 +173,7 @@ h3 {
   border-radius: 5px;
 }
 .inventar__sonstiges {
-  height: 150px;
+  height: 120px;
   border: 1px solid black;
 }
 .inventar__geld {
@@ -226,7 +226,7 @@ main {
   height: 1189px;
   width: 841px;
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 50px;
   background-color: var(--color__background);
   display: grid;
   grid-template-rows: repeat(6, auto);
