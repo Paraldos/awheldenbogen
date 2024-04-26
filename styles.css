@@ -94,9 +94,9 @@ h3 {
   grid-area: talente;
 }
 .talente__container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap__small);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap__small) var(--gap__medium);
 }
 .talente__container div {
   min-height: var(--height__value);
